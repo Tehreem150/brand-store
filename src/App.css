@@ -1,38 +1,78 @@
-.App {
+.search {
+  background-image: url("./images/search.png");
+  background-position-x: 12px;
+}
+.continue {
+  background: #fff;
+  box-shadow: 0 0 10px 3px #ececec;
+  border-radius: 8px;
+}
+.my-image {
+  background-image: url("./images/slider.png");
+}
+.browse_text {
+  color: var(--font-color, #333);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.lorem_text {
+  color: var(--font-color-1, #666);
   text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  background: rgba(255, 255, 255, 0)
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0.5) 75%,
+      rgba(255, 255, 255, 1) 100%
+    )
+    repeat scroll 0 0;
+  position: relative;
+  margin-top: -400px;
+  height: 400px;
+  z-index: 999;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bed_img {
+  border-radius: 10px;
+  z-index: 1000;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.prod_1 {
+  color: var(--color-gray-3, #898989);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
 }
+.bed_text {
+  /* text-shadow: white 2px 5px; */
+  color: var(--font-color, #333);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  text-align: center;
+  z-index: 999;
+  position: absolute;
 
-.App-link {
-  color: #61dafb;
+  font-weight: 600;
+  line-height: normal;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lorem_text {
+  color: var(--font-color-1, #666);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
