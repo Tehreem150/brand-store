@@ -1,8 +1,10 @@
 import React from "react";
 import shoes from "../images/shoes";
 import Slider from "react-slick";
+import product1 from "../images/product1";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ShoeComponent from "./ShoeComponent";
 const TrendingShoe = () => {
   function SampleNextArrow(props) {
     const { className, onClick } = props;
@@ -54,7 +56,7 @@ const TrendingShoe = () => {
     dots: true,
     infinite: false,
     speed: 2000,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -94,7 +96,7 @@ const TrendingShoe = () => {
         <hr className="w-12 h-0.5 mt-4 bg-[#ff0911] mx-6" />
       </h3>
       <div className="flex justify-center mt-5">
-        <ul className="flex space-x-10">
+        <ul className="flex space-x-16 2xl:space-x-10">
           <li className="font-serif text-xl  text-[#ff0911] underline  ">
             <a href=""> Sandals</a>
           </li>
@@ -118,118 +120,22 @@ const TrendingShoe = () => {
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 mt-8 mb-20 mx-6">
+      <div className="grid grid-cols-1 gap-10 mt-12 mb-20 mx-16 2xl:mx-28 ">
         <Slider {...settings}>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
-          <div>
-            <img src={shoes} alt="shoes" />
-            <div>
-              <p className="text-center text-[#878787]">PU</p>
-              <p className="text-center font-semibold text-[16px] text-[#222]">
-                Pink Formal Sandal PU49023
-              </p>
-              <p className="text-center text-[#696969]">Rs.6,000</p>
-            </div>
-          </div>
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
+          <ShoeComponent />
         </Slider>
       </div>
     </div>

@@ -5,23 +5,23 @@ const Product = () => {
   return (
     <div className=" flex justify-center  relative   cursor-pointer">
       <div className="hover:border-2">
-        <div className="px-10 py-6 justify-center">
+        <div className=" justify-center">
           <img
             src={product1}
-            className="h-50 flex justify-center items-center"
+            className="p-4 flex justify-center items-center"
             alt="product"
           />
-          <div className="my-4 ">
-            <p className=" prod_1 pl-[16px]">
-              <b className="!text-black text-xl">Salomon </b>XA PRO V8
+          <div className="mb-10">
+            <p className=" prod_1 text-center ">
+              <b className="!text-black  text-xl">Salomon </b>XA PRO V8
               WATERPROOF
             </p>
-            <p className="bed_text pl-[16px]">89.90</p>
+            <p className="text-black font-bold text-center ">89.90</p>
           </div>
         </div>
       </div>
-      <div className="group absolute w-[285px] h-[446px]  text-center ">
-        <div className="hidden group-hover:block w-[285px] mt-4 h-[446px] group-hover:bg-[#3A3A3A] group-hover:opacity-95">
+      <div className="group absolute  text-center ">
+        <div className="hidden group-hover:block   group-hover:bg-[#3A3A3A] group-hover:opacity-95">
           <button className="bg-[rgba(255,255,255)]  mt-44 text-[#ff0911] font-medium  w-52 h-12 ">
             Add to Cart
           </button>
