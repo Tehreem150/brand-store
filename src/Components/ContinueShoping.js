@@ -8,7 +8,7 @@ import banner5 from "../images/banner5.jpg";
 const ContinueShoping = () => {
   return (
     <div className="mx-auto ">
-      <div className="flex justify-center mr-5">
+      <div className="flex justify-center">
         <h3 className="flex justify-center mt-16">
           <hr className="w-12 h-0.5 mt-4  bg-[#ff0911] mx-6" />
           <span className="font-serif text-2xl font-semibold">

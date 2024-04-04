@@ -12,10 +12,10 @@ const Main_menu = () => {
   return (
     <div>
       <div className=" bg-white border-y-[1px]">
-        <div className="hidden md:flex  font-semibold   uppercase  justify-center text-[13px]   text-black space-x-4 xl:space-x-10 2xl:space-x-10 xl:mx-10  mx-0 h-12">
+        <div className="hidden md:flex  font-semibold   uppercase  justify-center text-[13px]   text-black xl:space-x-7 2xl:space-x-11  mx-auto h-12">
           <Link
             to="/"
-            className="hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911]  flex items-center  px-2"
+            className="hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911]  flex items-center "
           >
             New
           </Link>
@@ -40,10 +40,16 @@ const Main_menu = () => {
           <Link
             to="/contact"
             onMouseMove={handleMove}
-            onMouseLeave={handleLeave}
+            onMouseOut={handleLeave}
             className="hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911] flex items-center px-2"
           >
             Looks
+          </Link>
+          <Link
+            to="/"
+            className="hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911]  flex items-center "
+          >
+            Blog
           </Link>
 
           <Link
@@ -78,7 +84,15 @@ const Main_menu = () => {
           </Link>
         </div>
       </div>
-      {looksDrpdown && <Skincare />}
+      {looksDrpdown && (
+        <div
+          className="  bg-[#f7f7f7]"
+          onMouseMove={handleMove}
+          onMouseLeave={handleLeave}
+        >
+          <Skincare />
+        </div>
+      )}
     </div>
   );
 };

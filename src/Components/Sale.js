@@ -88,14 +88,11 @@ const Sale = () => {
     ],
   };
   return (
-    <div className=" grid grid-cols-4 mx-32  my-20 border-t-2">
+    <div className=" grid grid-cols-4 mx-60  my-20">
       <div className="">
         <img src={sale} alt="sale" />
       </div>
       <div className="col-span-3 mt-10">
-        {/* <p className="text-xl mt-4 ml-10 font-bold  text-black">
-          Neu bei SportX
-        </p> */}
         <div className=" grid grid-cols-1 ml-8 items-center  ">
           <Slider {...settings}>
             <Product />

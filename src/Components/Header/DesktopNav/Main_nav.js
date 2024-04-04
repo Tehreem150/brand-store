@@ -7,26 +7,26 @@ const Main_nav = () => {
   return (
     <div className="h-20">
       <div className="flex mt-2 mb-4  justify-around ">
-        <img src={logo} className="w-32 ml-24 " alt="logo" />
+        <img src={logo} className="w-32   " alt="logo" />
         <form className="hidden md:flex">
           <input
             type="text"
             placeholder="Search"
-            className="search bg-no-repeat bg-left  h-10 w-[400px] pl-8 text-black bg-[#f6f6f8] border-black border-[1px] rounded-3xl my-4 flex ml-20 "
+            className="search bg-no-repeat bg-left  h-10 w-[400px] pl-10 text-black bg-[#f6f6f8] border-black border-[1px] rounded-3xl my-4 flex  "
           />
         </form>
-        <div className="flex mr-20 space-x-0 xl:space-x-1 my-3 ">
+        <div className="flex  space-x-0 xl:space-x-1 my-3 ">
           <a href="" className="hover:bg-gray-300 p-2">
-            <img src={worldwide} className="w-8 " />
+            <img src={worldwide} className="w-7 " />
           </a>
           <a href="" className="hover:bg-gray-300 p-2">
-            <img src={compare} className="w-8" />
+            <img src={compare} className="w-7" />
           </a>
           <a href="" className="hover:bg-gray-300 p-2">
             <svg
               viewBox="0 0 24 24"
-              width="30"
-              height="30"
+              width="26"
+              height="26"
               fill="currentColor"
               aria-labelledby="your-account-:Ralm5e5:"
               class="zds-icon RC794g X9n9TI DlJ4rT _5Yd-hZ HlZ_Tf I_qHp3"
@@ -42,8 +42,8 @@ const Main_nav = () => {
           <a href="" className="hover:bg-gray-300 p-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
               class="YmZp3wm8YGLViEfVcM98 r_BwswIYHVFor8jJiQRV toaMk0GxaAG7vBOid4Vs YBF_R1myMDGoGI42vIPM wishlist-header--icon"
             >
@@ -56,7 +56,7 @@ const Main_nav = () => {
             </svg>
           </a>
           <a href="" className=" hover:bg-gray-300 p-2">
-            <img src={bag} className="w-8" />
+            <img src={bag} className="w-7" />
           </a>
         </div>
       </div>

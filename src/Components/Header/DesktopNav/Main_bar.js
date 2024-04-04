@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Main_Bar = () => {
   return (
@@ -9,7 +10,10 @@ const Main_Bar = () => {
           <b>††</b>
         </sup>{" "}
         on select beauty. New deals every day. <sup>††</sup>Exclusions/terms
-        apply. <b>SHOP NOW ▸</b>
+        apply.{" "}
+        <Link>
+          <b>SHOP NOW ▸</b>
+        </Link>
       </span>
     </div>
   );
