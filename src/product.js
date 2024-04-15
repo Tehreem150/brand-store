@@ -1,14 +1,13 @@
 import React from "react";
-import product1 from "./images/product1";
-
+import shoescheck from "./images/shoescheck.webp";
 const Product = () => {
   return (
     <div className=" flex justify-center  relative   cursor-pointer">
       <div className="hover:border-2">
         <div className=" justify-center">
           <img
-            src={product1}
-            className="p-4 flex justify-center items-center"
+            src={shoescheck}
+            className=" flex justify-center items-center"
             alt="product"
           />
           <div className="mb-10">

@@ -1,10 +1,9 @@
 import React from "react";
-import product1 from "../images/product1";
-
+import shoescheck from "../images/shoescheck.webp";
 const ShoeComponent = () => {
   return (
     <div>
-      <img src={product1} className="p-5" alt="shoes" />
+      <img src={shoescheck} className="p-5" alt="shoes" />
       <div>
         <p className="text-center text-[#878787]">PU</p>
         <p className="text-center font-semibold text-[16px] text-[#222]">

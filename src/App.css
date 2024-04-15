@@ -54,6 +54,14 @@
   font-weight: 500;
   line-height: 150%; /* 24px */
 }
+.prod_2 {
+  color: white;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
 .bed_text {
   /* text-shadow: white 2px 5px; */
   color: var(--font-color, #333);
@@ -72,6 +80,14 @@
   text-align: center;
   font-family: Montserrat;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav_items {
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

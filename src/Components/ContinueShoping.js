@@ -9,16 +9,16 @@ const ContinueShoping = () => {
   return (
     <div className="mx-auto ">
       <div className="flex justify-center">
-        <h3 className="flex justify-center mt-16">
+        <h3 className="flex justify-center mt-8">
           <hr className="w-12 h-0.5 mt-4  bg-[#ff0911] mx-6" />
-          <span className="font-serif text-2xl font-semibold">
+          <span className="font-serif text-2xl uppercase font-semibold">
             Continue Shopping
           </span>
           <hr className="w-12 h-0.5 mt-4 bg-[#ff0911] mx-6" />
         </h3>
       </div>
 
-      <div className=" grid grid-cols-3  mx-48 gap-4 mt-16 ">
+      <div className=" grid grid-cols-3  mx-48 gap-7 mt-16 ">
         <div className=" continue rounded-xl">
           <img src={banner1} alt="banner" className="rounded-t-xl" />
           <p className="  text-center font-semibold my-4">SAVE MONEY</p>

@@ -11,6 +11,7 @@ const Categorian = () => {
     return (
       <button className={className} onClick={onClick} type="button">
         <svg
+          className="mt-[-95px] 2xl:mt-0"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -34,6 +35,7 @@ const Categorian = () => {
     return (
       <button className={className} onClick={onClick} type="button">
         <svg
+          className="mt-[-95px] 2xl:mt-0"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -56,27 +58,41 @@ const Categorian = () => {
     dots: false,
     infinite: false,
     speed: 2000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          initialSlide: 2,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
       {
@@ -89,20 +105,20 @@ const Categorian = () => {
     ],
   };
   return (
-    <div className="mx-auto lg:w-[1024px]">
-      <div className="mt-[56px] ">
+    <div className="mx-auto ">
+      <div className=" mt-1 xl:mt-20 ">
         <p className="browse_text text-center">Browse The Range</p>
         <p className="lorem_text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
 
-      <div className=" grid grid-cols-1  mx-auto gap-12 ">
+      <div className=" grid grid-cols-1 gap-0 lg:gap-2 mx-16 lg:mx-32  ">
         <Slider {...settings}>
           <div className="w-[324px] border-gray-900 h-[500px] px-2 mt-[62.9px]">
             <img src={dining} className="" alt="Dining" />
             <div className="content"></div>
-            <p className=" bed_text mt-[-40px] ml-28">Dining</p>
+            <p className=" bed_text mt-[-40px] ml-20 2xl:ml-24">Dining</p>
           </div>
           <div className="  w-[324px] h-[362px] px-2 mt-[62.9px]">
             <img src={living} className="" alt="Living" />
@@ -131,7 +147,7 @@ const Categorian = () => {
           </div>
         </Slider>
       </div>
-      <div className=" grid grid-cols-1 mx-auto mb-10">
+      <div className="grid grid-cols-1 gap-0 lg:gap-2 mx-16 lg:mx-32">
         <Slider {...settings}>
           <div className="w-[324px] h-[500px] px-1   mt-[62.9px]">
             <img src={dining} className="bed_img  " alt="Dining" />

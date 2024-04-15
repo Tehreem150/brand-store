@@ -10,7 +10,7 @@ const ToggleNav = ({ togglemenu, setToggleMenu }) => {
 
   return (
     <div>
-      <div>
+      <div className="">
         <div className="flex justify-between py-2 pl-4 border-b-2 ">
           <img src={logo} className="w-28 ml-4 my-2" alt="logo" />
 

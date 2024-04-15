@@ -2,7 +2,7 @@ import React from "react";
 function MainSlider() {
   return (
     <div>
-      <div className="  flex my-image bg-cover bg-no-repeat   mx-auto justify-start">
+      <div className="  flex my-image bg-contain xl:bg-cover  bg-no-repeat   mx-auto ">
         <div className=" flex  mt-64 ml-64 h-96 rounded-md   ">
           {/* <div className=" hidden lg:block ml-24 mr-8 md:ml-12 md:mr-12">
             <p className=" pt-5 text-xl ">New Arrival</p>

@@ -1,5 +1,6 @@
 import React from "react";
 import sale from "../images/sale.png";
+import logo from "../images/logo.png";
 import Product from "../product";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -71,11 +72,19 @@ const Sale = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -88,12 +97,12 @@ const Sale = () => {
     ],
   };
   return (
-    <div className=" grid grid-cols-4 mx-60  my-20">
+    <div className=" grid grid-cols-4 mx-auto  mt-10">
       <div className="">
         <img src={sale} alt="sale" />
       </div>
-      <div className="col-span-3 mt-10">
-        <div className=" grid grid-cols-1 ml-8 items-center  ">
+      <div className="col-span-3 flex justify-center items-center">
+        <div className=" grid grid-cols-1 mx-12 items-center  ">
           <Slider {...settings}>
             <Product />
             <Product />
