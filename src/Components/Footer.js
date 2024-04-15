@@ -4,24 +4,23 @@ import logo from "../images/logo.png";
 
 const Footer = () => {
   return (
-    <div className="footer  mt-20 bg-[#1b1b1c] ">
-      <footer className="flex mx-0 lg:mx-0 xl:mx-16 py-8 flex-col   md:flex-row justify-around  mb-2 px-5 md:px-0">
-        <div className="sm:mr- mr-0 lg:mr-10">
-          <img
-            src={logo}
-            className="w-32 mt-4 p-4 rounded   bg-white   "
-            alt="logo"
-          />
+    <div className="footer mt-10  lg:mt-20 bg-[#1b1b1c] ">
+      <footer className="flex mx-0 lg:ml-6 xl:mx-16 py-8 flex-col   lg:flex-row justify-around  mb-2 px-5 lg:px-0">
+        <div className="w-full lg:w-1/4 mr-0 lg:mr-10 ">
+          <div className="">
+            <img
+              src={logo}
+              className="w-32 mt-4 p-4 rounded   bg-white   "
+              alt="logo"
+            />
+          </div>
+
           <p className="prod_1 !text-white mt-5 ">
-            BrankMarkt ist ein Brand Store in St.
-            <br />
-            Gallen mit einer exklusiven Kollektion.
-            <br />
-            Wir haben verschiedene Kollektionen für <br />
-            Herren, Damen,eine große Auswahl an <br />
-            Schuhen,Taschen und Parfüms.
+            BrankMarkt ist ein Brand Store in St. Gallen mit einer exklusiven
+            Kollektion. Wir haben verschiedene Kollektionen für Herren,
+            Damen,eine große Auswahl an Schuhen,Taschen und Parfüms.
           </p>
-          <p className="prod_1 !text-white">
+          <p className="prod_1 !text-white ">
             {/* <strong className="nav_items">Address:</strong> */}
             <br /> Rosenbergstrasse 46, 9000 St.Gallen <br />
             071 223 16 36 <br />
@@ -29,7 +28,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="md:mx-auto mt-6 md:mt-5">
+        <div className="mx-0 lg:mx-auto mt-6 md:mt-5 lg:mt-10 xl:mt-5">
           <p className="prod_2 mt-5 md:mt-0 ">Support</p>
           <div className="mt-6  md:mt-6">
             {" "}
@@ -62,7 +61,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="md:mx-auto mt-6 md:mt-5">
+        <div className="mx-0 lg:mx-auto mt-6 md:mt-5 lg:mt-10 xl:mt-5">
           <p className="prod_2 mt-5 md:mt-0 ">Help</p>
           <div className="mt-6  md:mt-6">
             {" "}
@@ -95,7 +94,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="md:mx-auto mt-6 md:mt-5">
+        <div className="mx-0 lg:mx-auto mt-6 md:mt-5 lg:mt-10 xl:mt-5">
           <p className="prod_2">Links</p>
           <ul>
             <li className="nav_items mt-6  md:mt-6">
@@ -116,7 +115,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="md:mx-auto">
+        <div className="mx-0 lg:mx-auto mt-6 md:mt-5 lg:mt-5 xl:mt-0">
           <p className="prod_2 mt-5 md:mt-5   ">Newsletter</p>
           <p className="prod_1 mt-2  md:mt-[46px] ">
             {" "}
@@ -129,8 +128,8 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="border-t-2">
-        <p className="prod_1 mr-8 py-2 ml-2 lg:ml-24 !text-white ">
+      <div className="border-t-2 ">
+        <p className="prod_1 mr-8 py-2 ml-2 lg:ml-16 !text-white ">
           Copyright 2024. All rights reserved
         </p>
       </div>

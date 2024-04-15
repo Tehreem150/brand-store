@@ -11,7 +11,7 @@ const Categorian = () => {
     return (
       <button className={className} onClick={onClick} type="button">
         <svg
-          className="mt-[-95px] 2xl:mt-0"
+          className="mt-0 sm:mt-[-95px] md:mt-0"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -35,7 +35,7 @@ const Categorian = () => {
     return (
       <button className={className} onClick={onClick} type="button">
         <svg
-          className="mt-[-95px] 2xl:mt-0"
+          className="mt-0 sm:mt-[-59px] md:mt-0"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -104,74 +104,186 @@ const Categorian = () => {
       },
     ],
   };
+
   return (
     <div className="mx-auto ">
-      <div className=" mt-1 xl:mt-20 ">
-        <p className="browse_text text-center">Browse The Range</p>
-        <p className="lorem_text">
+      <div className=" mt-6 xl:mt-10 ">
+        <p className="browse_text !text-3xl text-center">Browse The Range</p>
+        <p className="lorem_text mt-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
 
-      <div className=" grid grid-cols-1 gap-0 lg:gap-2 mx-16 lg:mx-32  ">
+      <div className=" grid grid-cols-1 gap-0 lg:gap-2 mt-6 mx-16 lg:mx-32  ">
         <Slider {...settings}>
-          <div className="w-[324px] border-gray-900 h-[500px] px-2 mt-[62.9px]">
-            <img src={dining} className="" alt="Dining" />
+          <div className="w-[324px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={dining} alt="Dining" />
+            </div>
             <div className="content"></div>
-            <p className=" bed_text mt-[-40px] ml-20 2xl:ml-24">Dining</p>
+            <p className=" bed_text mt-[-50px] text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Dining
+            </p>
           </div>
-          <div className="  w-[324px] h-[362px] px-2 mt-[62.9px]">
-            <img src={living} className="" alt="Living" />
+          <div className="w-[324px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={bedroom} alt="Bedroom" />
+            </div>
             <div className="content"></div>
-            <p className="bed_text mt-[-40px] ml-28">Living</p>
+            <p className=" bed_text mt-[-50px] text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Bedroom
+            </p>
           </div>
-          <div className=" w-[324px] h-[362px] px-2 mt-[62.9px]">
-            <img src={bedroom} className="" alt="Bedroom" />
+          <div className="w-[324px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={living} alt="Living" />
+            </div>
             <div className="content"></div>
-            <p className="bed_text mt-[-40px] ml-28">Bedroom</p>
+            <p className=" bed_text mt-[-50px] text-center  ml-20  sm:ml-56  md:ml-28 lg:ml-20 2xl:ml-24">
+              Living
+            </p>
           </div>
-          <div className="w-[324px] h-[362px] px-2 mt-[62.9px]">
-            <img src={dining} className="" alt="Dining" />
+          <div className="w-[324px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={dining} alt="Dining" />
+            </div>
             <div className="content"></div>
-            <p className=" bed_text mt-[-40px] ml-28">Dining</p>
+            <p className=" bed_text mt-[-50px] text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Dining
+            </p>
           </div>
-          <div className="  w-[324px] h-[362px] px-2 mt-[62.9px]">
-            <img src={living} className="" alt="Living" />
+          <div className="w-[324px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={bedroom} alt="Bedroom" />
+            </div>
             <div className="content"></div>
-            <p className="bed_text mt-[-40px] ml-28">Living</p>
+            <p className=" bed_text mt-[-50px] text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Bedroom
+            </p>
           </div>
-          <div className=" w-[324px] h-[362px] px-2 mt-[62.9px]">
-            <img src={bedroom} className="" alt="Bedroom" />
+          <div className="w-[324px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={living} alt="Living" />
+            </div>
             <div className="content"></div>
-            <p className="bed_text mt-[-40px] ml-28">Bedroom</p>
+            <p className=" bed_text mt-[-50px] text-center  ml-20  sm:ml-56  md:ml-28 lg:ml-20 2xl:ml-24">
+              Living
+            </p>
+          </div>
+          <div className="w-[324px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={dining} alt="Dining" />
+            </div>
+            <div className="content"></div>
+            <p className=" bed_text mt-[-50px] text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Dining
+            </p>
+          </div>
+          <div className="w-[324px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={bedroom} alt="Bedroom" />
+            </div>
+            <div className="content"></div>
+            <p className=" bed_text mt-[-50px] text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Bedroom
+            </p>
+          </div>
+          <div className="w-[324px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={living} alt="Living" />
+            </div>
+            <div className="content"></div>
+            <p className=" bed_text mt-[-50px] text-center  ml-20  sm:ml-56  md:ml-28 lg:ml-20 2xl:ml-24">
+              Living
+            </p>
           </div>
         </Slider>
       </div>
-      <div className="grid grid-cols-1 gap-0 lg:gap-2 mx-16 lg:mx-32">
+      <div className=" grid grid-cols-1 gap-0 lg:gap-2 mt-6 lg:mt-20 mx-16 lg:mx-32  ">
         <Slider {...settings}>
-          <div className="w-[324px] h-[500px] px-1   mt-[62.9px]">
-            <img src={dining} className="bed_img  " alt="Dining" />
-            <p className="bed_text mt-[30px] ml-28 text-center">Dining</p>
+          <div className="w-[324px] h-[400px] sm:h-[600px] md:h-[500px] lg:h-[450px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={bedroom} className="bed_img" alt="Bedroom" />
+            </div>
+
+            <div className="content"></div>
+            <p className=" bed_text mt-6 text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Bedroom
+            </p>
           </div>
-          <div className="  w-[324px] h-[362px] px-1 mt-[62.9px]">
-            <img src={living} className="bed_img" alt="Living" />
-            <p className="bed_text mt-[30px] ml-28 text-center">Living</p>
+          <div className="w-[324px] h-[400px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={dining} className="bed_img" alt="Dining" />
+            </div>
+            <div className="content"></div>
+            <p className=" bed_text mt-6 text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Dining
+            </p>
           </div>
-          <div className=" w-[324px] h-[362px] px-1 mt-[62.9px]">
-            <img src={bedroom} className="bed_img" alt="Bedroom" />
-            <p className="bed_text mt-[30px] ml-28 text-center">Bedroom</p>
+          <div className="w-[324px] h-[400px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={living} className="bed_img" alt="Living" />
+            </div>
+            <div className="content"></div>
+            <p className=" bed_text mt-6 text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Living
+            </p>
           </div>
-          <div className="w-[324px] h-[362px] px-1 mt-[62.9px]">
-            <img src={dining} className="bed_img" alt="Dining" />
-            <p className="bed_text mt-[30px] ml-28 text-center">Dining</p>
+          <div className="w-[324px] h-[400px] sm:h-[600px] md:h-[500px] lg:h-[450px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={bedroom} className="bed_img" alt="Bedroom" />
+            </div>
+
+            <div className="content"></div>
+            <p className=" bed_text mt-6 text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Bedroom
+            </p>
           </div>
-          <div className="  w-[324px] h-[362px] px-1 mt-[62.9px]">
-            <img src={living} className="bed_img" alt="Living" />
-            <p className="bed_text mt-[30px] ml-28 text-center">Living</p>
+          <div className="w-[324px] h-[400px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={dining} className="bed_img" alt="Dining" />
+            </div>
+            <div className="content"></div>
+            <p className=" bed_text mt-6 text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Dining
+            </p>
           </div>
-          <div className=" w-[324px] h-[362px] px-1 mt-[62.9px]">
-            <img src={bedroom} className="bed_img" alt="Bedroom" />
-            <p className="bed_text mt-[30px] ml-28 text-center">Bedroom</p>
+          <div className="w-[324px] h-[400px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={living} className="bed_img" alt="Living" />
+            </div>
+            <div className="content"></div>
+            <p className=" bed_text mt-6 text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Living
+            </p>
+          </div>
+          <div className="w-[324px] h-[400px] sm:h-[600px] md:h-[500px] lg:h-[450px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={bedroom} className="bed_img" alt="Bedroom" />
+            </div>
+
+            <div className="content"></div>
+            <p className=" bed_text mt-6 text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Bedroom
+            </p>
+          </div>
+          <div className="w-[324px] h-[400px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={dining} className="bed_img" alt="Dining" />
+            </div>
+            <div className="content"></div>
+            <p className=" bed_text mt-6 text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Dining
+            </p>
+          </div>
+          <div className="w-[324px] h-[400px] border-gray-900  px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={living} className="bed_img" alt="Living" />
+            </div>
+            <div className="content"></div>
+            <p className=" bed_text mt-6 text-center ml-20  sm:ml-56 md:ml-28 lg:ml-20 2xl:ml-24">
+              Living
+            </p>
           </div>
         </Slider>
       </div>

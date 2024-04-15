@@ -10,12 +10,12 @@ const Home = () => {
   return (
     <div className="App">
       <Header />
-      {/* <MainSlider />
+      <MainSlider />
       <Categorian />
-     <Sale />
+      <Sale />
       <TrendingShoe />
-      <ContinueShoping /> */}
-      {/* <Footer /> */}
+      <ContinueShoping />
+      <Footer />
     </div>
   );
 };

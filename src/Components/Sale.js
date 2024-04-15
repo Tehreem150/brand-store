@@ -98,10 +98,10 @@ const Sale = () => {
   };
   return (
     <div className=" grid grid-cols-4 mx-auto  mt-10">
-      <div className="">
+      <div className="hidden sm:block">
         <img src={sale} alt="sale" />
       </div>
-      <div className="col-span-3 flex justify-center items-center">
+      <div className="col-span-4 sm:col-span-3 flex justify-center items-center">
         <div className=" grid grid-cols-1 mx-12 items-center  ">
           <Slider {...settings}>
             <Product />

@@ -98,8 +98,8 @@ const TrendingShoe = () => {
         <hr className="w-12 h-0.5 mt-4 bg-[#ff0911] mx-6" />
       </h3>
       <div className="flex justify-center mt-5">
-        <ul className="flex space-x-16 2xl:space-x-10">
-          <li className="font-serif text-xl  text-[#ff0911] underline  ">
+        <ul className="flex flex-col lg:flex-row  space-x-8 2xl:space-x-10">
+          <li className="font-serif text-xl  text-[#ff0911] underline flex justify-center  ">
             <a href=""> Sandals</a>
           </li>
           <li className="font-serif text-xl hover:text-[#ff0911] hover:underline text-[#222] ">
@@ -122,14 +122,8 @@ const TrendingShoe = () => {
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 gap-10 mt-12 mb-20 mx-12 ">
+      <div className="grid grid-cols-1 gap-10 mt-2 sm:mt-4 lg:mt-12 mb-20 mx-12 ">
         <Slider {...settings}>
-          <ShoeComponent />
-          <ShoeComponent />
-          <ShoeComponent />
-          <ShoeComponent />
-          <ShoeComponent />
-          <ShoeComponent />
           <ShoeComponent />
           <ShoeComponent />
           <ShoeComponent />
