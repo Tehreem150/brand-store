@@ -4,8 +4,8 @@ import logo from "../images/logo.png";
 
 const Footer = () => {
   return (
-    <div className="footer mt-10  lg:mt-20 bg-[#1b1b1c] ">
-      <footer className="flex mx-0 lg:ml-6 xl:mx-16 py-8 flex-col   lg:flex-row justify-around  mb-2 px-5 lg:px-0">
+    <div className="footer mt-10   lg:mt-20 bg-[#1b1b1c] ">
+      <footer className="flex mx-0 lg:ml-8 xl:mx-16 py-8 flex-col   lg:flex-row justify-around  mb-2 px-5 lg:px-0">
         <div className="w-full lg:w-1/4 mr-0 lg:mr-10 ">
           <div className="">
             <img

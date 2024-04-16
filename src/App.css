@@ -40,11 +40,11 @@
   position: relative;
   margin-top: -400px;
   height: 400px;
-  z-index: 999;
+  z-index: 9;
 }
 .bed_img {
   border-radius: 10px;
-  z-index: 1000;
+  z-index: 10;
 }
 .prod_1 {
   color: var(--color-gray-3, #898989);

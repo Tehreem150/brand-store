@@ -20,7 +20,7 @@ const Main_menu = () => {
   return (
     <div>
       <div className=" bg-white border-y-[1px]">
-        <div className="hidden md:flex  font-semibold   uppercase  justify-center text-[13px]   text-black space-x-4 xl:space-x-7 2xl:space-x-11  mx-auto h-12">
+        <div className="hidden relative md:flex  font-semibold   uppercase  justify-center text-[13px]   text-black space-x-4 xl:space-x-7 2xl:space-x-11  mx-auto h-12">
           <Link
             to="/"
             className="hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911]  flex items-center "
@@ -96,7 +96,7 @@ const Main_menu = () => {
       </div>
       {looksDrpdown && (
         <div
-          className="  bg-[#f7f7f7]"
+          className="  bg-[#f7f7f7] absolute left-0"
           onMouseMove={handleMove}
           onMouseLeave={handleLeave}
         >
@@ -105,7 +105,7 @@ const Main_menu = () => {
       )}
       {brandsDrpdown && (
         <div
-          className="  bg-[#f7f7f7]"
+          className="  bg-[#f7f7f7] absolute left-0"
           onMouseMove={handleBrandMove}
           onMouseLeave={handleBrandLeave}
         >

@@ -65,8 +65,8 @@ const Sale = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
@@ -77,6 +77,7 @@ const Sale = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
+          dots: false,
         },
       },
       {
@@ -85,6 +86,7 @@ const Sale = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
+          dots: false,
         },
       },
       {
@@ -92,12 +94,13 @@ const Sale = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],
   };
   return (
-    <div className=" grid grid-cols-4 mx-4 md:mx-12 lg:mx-32  mt-10">
+    <div className=" grid grid-cols-4 mx-4 md:mx-0 lg:mx-32  mt-10">
       <div className="hidden sm:block">
         <img src={sale} alt="sale" />
       </div>

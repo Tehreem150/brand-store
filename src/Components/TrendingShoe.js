@@ -56,7 +56,7 @@ const TrendingShoe = () => {
     dots: true,
     infinite: false,
     speed: 2000,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -72,11 +72,19 @@ const TrendingShoe = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -89,7 +97,7 @@ const TrendingShoe = () => {
     ],
   };
   return (
-    <div className="mb-20 mt-20 mx-auto">
+    <div className="mb-20 mt-20 mx-0 lg:mx-32">
       <h3 className="flex justify-center mt-20">
         <hr className="w-12 h-0.5 mt-4 bg-[#ff0911] mx-6" />
         <span className="font-serif text-2xl font-semibold uppercase">
@@ -122,7 +130,7 @@ const TrendingShoe = () => {
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 gap-10 mt-2 sm:mt-4 lg:mt-12 mb-20 mx-12 ">
+      <div className="grid grid-cols-1 gap-10 mt-2 sm:mt-4 lg:mt-12 mb-20 mx-12 lg:mx-12 ">
         <Slider {...settings}>
           <ShoeComponent />
           <ShoeComponent />

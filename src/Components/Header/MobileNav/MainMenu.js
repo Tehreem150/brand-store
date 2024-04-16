@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ToggleNav from "./ToggleNav";
 import MainBar from "./MainBar";
 import MainNav from "./MainNav";
-import { Link } from "react-router-dom";
 
 const MainMenu = () => {
   const [togglemenu, setToggleMenu] = useState(false);
@@ -13,16 +12,14 @@ const MainMenu = () => {
           <MainBar />
           <MainNav />
           <div className="flex h-12 mt-1.5 border-x space-x-3 border-y border-gray-300">
-            <Link to="/nav">
-              <div
-                className="h-6 flex flex-col ml-4  justify-between my-3"
-                onClick={() => setToggleMenu(true)}
-              >
-                <span className="block h-0.5 w-7 bg-black rounded-full"></span>
-                <span className="block h-0.5 w-5 bg-black rounded-full"></span>
-                <span className="block h-0.5 w-7 bg-black rounded-full"></span>
-              </div>
-            </Link>
+            <div
+              className="h-6 flex flex-col ml-4  justify-between my-3"
+              onClick={() => setToggleMenu(true)}
+            >
+              <span className="block h-0.5 w-7 bg-black rounded-full"></span>
+              <span className="block h-0.5 w-5 bg-black rounded-full"></span>
+              <span className="block h-0.5 w-7 bg-black rounded-full"></span>
+            </div>
             <form className="w-full ">
               <input
                 type="text"
@@ -33,9 +30,9 @@ const MainMenu = () => {
           </div>
         </div>
       )}
-      {/* {togglemenu && (
+      {togglemenu && (
         <ToggleNav togglemenu={togglemenu} setToggleMenu={setToggleMenu} />
-      )} */}
+      )}
     </div>
   );
 };
