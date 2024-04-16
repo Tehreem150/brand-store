@@ -8,5 +8,5 @@ export default function Navbar() {
 
   if (width === 0) return null;
 
-  return <div>{width > 1024 ? <DeskIndex /> : <MobIndex />}</div>;
+  return <div>{width > 880 ? <DeskIndex /> : <MobIndex />}</div>;
 }

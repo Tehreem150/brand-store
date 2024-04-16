@@ -3,6 +3,7 @@ import logo from "../../../images/logo.png";
 import Damen from "./Damen";
 import Herren from "./Herren";
 import Kinder from "./Kinder";
+import { Link } from "react-router-dom";
 const ToggleNav = ({ togglemenu, setToggleMenu }) => {
   const [damen, setDamen] = useState(true);
   const [herren, setHerren] = useState(false);
@@ -13,19 +14,16 @@ const ToggleNav = ({ togglemenu, setToggleMenu }) => {
       <div className="">
         <div className="flex justify-between py-2 pl-4 border-b-2 ">
           <img src={logo} className="w-28 ml-4 my-2" alt="logo" />
-
-          {/* <span className="font-bold text-[17px]">Suche nach Kategorie</span> */}
-          <div
-            className=" h-7 mt-6 mr-2 flex flex-col items-end justify-between"
-            onClick={() => setToggleMenu(false)}
-          >
-            <span className="block h-0.5 w-8 bg-black rounded-full origin-left transform rotate-45 translate-y-0.5 "></span>
-            <span className="block h-0.5 w-8 bg-black rounded-full origin-left transform -rotate-45 -translate-y-0.5"></span>
-          </div>
+          <Link to="/">
+            <div className=" h-7 mt-6 mr-2 flex flex-col items-end justify-between">
+              <span className="block h-0.5 w-8 bg-black rounded-full origin-left transform rotate-45 translate-y-0.5 "></span>
+              <span className="block h-0.5 w-8 bg-black rounded-full origin-left transform -rotate-45 -translate-y-0.5"></span>
+            </div>
+          </Link>
         </div>
         <div>
           <button
-            className="w-1/3 border-b-2 px-6 py-2 border-r-2 hover:bg-slate-100"
+            className="w-1/3 border-b-2 px-6 py-2 border-r-2  hover:bg-slate-100"
             onClick={() => {
               setDamen(true);
               setHerren(false);

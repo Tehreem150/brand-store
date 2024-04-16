@@ -18,7 +18,7 @@ const ContinueShoping = () => {
         </h3>
       </div>
 
-      <div className=" grid grid-cols-1 lg:grid-cols-3 mx-10  lg:mx-20 xl:mx-48 gap-7 mt-16 ">
+      <div className=" grid grid-cols-1 lg:grid-cols-3 mx-10  lg:mx-20 xl:mx-32 gap-7 mt-16 ">
         <div className=" continue rounded-xl">
           <img src={banner1} alt="banner" className="rounded-t-xl" />
           <p className="  text-center font-semibold my-4">SAVE MONEY</p>
@@ -32,7 +32,7 @@ const ContinueShoping = () => {
           <p className="  text-center font-semibold my-4">PROMOTIONS</p>
         </div>
       </div>
-      <div className=" grid grid-cols-1 lg:grid-cols-2 mx-10  lg:mx-20 xl:mx-72 gap-4 my-8 ">
+      <div className=" grid grid-cols-1 lg:grid-cols-2 mx-10  lg:mx-20 xl:mx-64 gap-4 my-8 ">
         <div className=" continue rounded-xl">
           <img src={banner4} alt="banner" className="rounded-t-xl" />
           <p className="  text-center font-semibold my-4">SAVE MONEY</p>

@@ -97,7 +97,7 @@ const Sale = () => {
     ],
   };
   return (
-    <div className=" grid grid-cols-4 mx-auto  mt-10">
+    <div className=" grid grid-cols-4 mx-4 md:mx-12 lg:mx-32  mt-10">
       <div className="hidden sm:block">
         <img src={sale} alt="sale" />
       </div>
