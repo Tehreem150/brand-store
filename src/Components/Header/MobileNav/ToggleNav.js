@@ -9,7 +9,7 @@ const ToggleNav = ({ togglemenu, setToggleMenu }) => {
   const [kinder, setKinder] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0  h-screen  w-screen bg-white items-center overflow-hidden justify-center z-20 ">
+    <nav className="fixed top-0 left-0 max-h-screen  w-screen bg-white items-center overflow-scroll justify-center z-20 ">
       <div className="flex justify-between py-2 pl-4 border-b-2 ">
         <img src={logo} className="w-28 ml-4 my-2" alt="logo" />
         <div
