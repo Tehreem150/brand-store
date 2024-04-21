@@ -6,15 +6,17 @@ import Categorian from "../Components/Categorian";
 import Sale from "../Components/Sale";
 import ContinueShoping from "../Components/ContinueShoping";
 import TrendingShoe from "../Components/TrendingShoe";
+import Category_outtext from "../Components/Category_outtext";
 const Home = () => {
   return (
     <div className="App">
       <Header />
       <MainSlider />
       <Categorian />
-      <Sale />
+      <Category_outtext />
       <TrendingShoe />
       <ContinueShoping />
+      <Sale />
       <Footer />
     </div>
   );

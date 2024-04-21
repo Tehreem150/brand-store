@@ -1,9 +1,9 @@
 import React from "react";
-import shoescheck from "../images/shoescheck.webp";
-const ShoeComponent = () => {
+import shoe from "../images/shoe.webp";
+const ShoeComponents = () => {
   return (
     <div>
-      <img src={shoescheck} className="p-0 sm:p-5" alt="shoes" />
+      <img src={shoe} className="p-0 sm:p-5" alt="shoes" />
       <div>
         <p className="text-center text-[#878787]">PU</p>
         <p className="text-center font-semibold text-[16px] text-[#222]">
@@ -15,4 +15,4 @@ const ShoeComponent = () => {
   );
 };
 
-export default ShoeComponent;
+export default ShoeComponents;

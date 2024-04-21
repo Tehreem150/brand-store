@@ -1,10 +1,10 @@
 import React from "react";
-import sale from "../images/sale.png";
-import Product from "../Components/product";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const Sale = () => {
+import ShoeComponents from "../Components/ShoeComponents";
+
+const TrendingTabs = () => {
   function SampleNextArrow(props) {
     const { className, onClick } = props;
     return (
@@ -54,9 +54,9 @@ const Sale = () => {
   var settings = {
     dots: true,
     infinite: false,
-    speed: 1000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    speed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 2,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     initialSlide: 0,
@@ -64,7 +64,7 @@ const Sale = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -76,16 +76,14 @@ const Sale = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
-          dots: false,
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          dots: false,
         },
       },
       {
@@ -99,37 +97,19 @@ const Sale = () => {
     ],
   };
   return (
-    <div>
-      <h3 className="flex justify-center mt-10 lg:mt-20">
-        <hr className="w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />
-        <span className="font-serif text-[20px] md:text-2xl font-semibold uppercase">
-          Sale
-        </span>
-        <hr className=" w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />
-      </h3>
-      <p className=" !text-center text-black !text-[15px]  mt-2 mx-8 sm:mx-0">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-      <div className=" grid grid-cols-4   mx-4 md:mx-0 lg:mx-40 mt-0  sm:mt-10">
-        <div className="hidden md:block">
-          <img src={sale} alt="sale" className="" />
-        </div>
-        <div className="col-span-4 md:col-span-3 flex justify-center items-center">
-          <div className=" grid grid-cols-1 mx-12 items-center  ">
-            <Slider {...settings}>
-              <Product />
-
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-            </Slider>
-          </div>
-        </div>
-      </div>
+    <div className="grid grid-cols-1 gap-10 mx-12 lg:mx-0  ">
+      <Slider {...settings}>
+        <ShoeComponents />
+        <ShoeComponents />
+        <ShoeComponents />
+        <ShoeComponents />
+        <ShoeComponents />
+        <ShoeComponents />
+        <ShoeComponents />
+        <ShoeComponents />
+      </Slider>
     </div>
   );
 };
 
-export default Sale;
+export default TrendingTabs;

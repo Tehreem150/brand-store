@@ -19,7 +19,7 @@ function MainSlider() {
           </div> */}
         </div>
       </div>
-      <div className=" flex hidden  bg-pink-100  h-96    ">
+      <div className="  hidden  bg-pink-100  h-96    ">
         <div className="  ml-24 mr-8 md:ml-32 md:mr-12">
           <p className=" pt-8 text-xl">New Arrival</p>
           <p className="text-5xl font-extrabold text-black mt-4 italic">

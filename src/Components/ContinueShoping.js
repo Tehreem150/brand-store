@@ -7,16 +7,17 @@ import banner5 from "../images/banner5.jpg";
 
 const ContinueShoping = () => {
   return (
-    <div className="mx-32 ">
-      <div className="flex justify-center">
-        <h3 className="flex justify-center mt-8">
-          <hr className="w-12 h-0.5 mt-4  bg-[#ff0911] mx-6" />
-          <span className="font-serif text-[20px] md:text-2xl uppercase font-semibold">
-            Continue Shopping
-          </span>
-          <hr className="w-12 h-0.5 mt-4 bg-[#ff0911] mx-6" />
-        </h3>
-      </div>
+    <div className=" ">
+      <h3 className="flex justify-center  mt-10 lg:mt-20">
+        <hr className="w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />
+        <span className="font-serif text-[20px] md:text-2xl font-semibold uppercase">
+          Continue Shopping
+        </span>
+        <hr className=" w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />
+      </h3>
+      <p className=" !text-center text-black !text-[15px]  mt-2 mx-8 sm:mx-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
 
       <div className=" grid grid-cols-1 lg:grid-cols-3 mx-10  lg:mx-20 xl:mx-32 gap-7 mt-16 ">
         <div className=" continue rounded-xl">

@@ -1,9 +1,9 @@
 import React from "react";
-import shoescheck from "./images/shoescheck.webp";
+import shoescheck from "../images/shoescheck.webp";
 const Product = () => {
   return (
     <div className=" flex justify-center  relative   cursor-pointer">
-      <div className="hover:border-2">
+      <div className="hover:product_hover">
         <div className=" justify-center">
           <img
             src={shoescheck}
@@ -19,9 +19,9 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <div className="group absolute  text-center ">
-        <div className="hidden group-hover:block   group-hover:bg-[#3A3A3A] group-hover:opacity-95">
-          <button className="bg-[rgba(255,255,255)]  mt-44 text-[#ff0911] font-medium  w-52 h-12 ">
+      <div className="hidden group absolute  text-center ">
+        <div className=" hidden group-hover:block   group-hover:bg-[#3A3A3A] group-hover:opacity-95">
+          <button className="bg-[rgba(255,255,255)]  mt-44 text-[#ff0911] font-medium   w-52 h-12 ">
             Add to Cart
           </button>
 
