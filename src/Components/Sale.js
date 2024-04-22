@@ -110,7 +110,7 @@ const Sale = () => {
       <p className=" !text-center text-black !text-[15px]  mt-2 mx-8 sm:mx-0">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
-      <div className=" grid grid-cols-4   mx-4 md:mx-0 lg:mx-40 mt-0  sm:mt-10">
+      <div className=" grid grid-cols-4   mx-4 md:mx-0 lg:mx-20 xl:mx-32 mt-0  sm:mt-10">
         <div className="hidden md:block">
           <img src={sale} alt="sale" className="" />
         </div>

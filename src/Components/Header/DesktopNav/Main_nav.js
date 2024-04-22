@@ -6,7 +6,7 @@ import worldwide from "../../../images/worldwide.png";
 const Main_nav = () => {
   return (
     <div className="h-20">
-      <div className="flex mt-2 mb-4  justify-around ">
+      <div className="flex mt-2 mb-4  justify-around">
         <img src={logo} className="w-32   " alt="logo" />
         <form className="hidden md:flex">
           <input

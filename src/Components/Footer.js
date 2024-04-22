@@ -5,7 +5,7 @@ import logo from "../images/logo.png";
 const Footer = () => {
   return (
     <div className="footer mt-10   lg:mt-20 bg-[#1b1b1c] ">
-      <footer className="flex mx-0 lg:ml-8 xl:mx-16 py-8 flex-col   lg:flex-row justify-around  mb-2 px-5 lg:px-0">
+      <footer className="flex mx-0 lg:mx-12 xl:mx-24 py-8 flex-col   lg:flex-row justify-around  mb-2 px-5 lg:px-0">
         <div className="w-full lg:w-1/4 mr-0 lg:mr-10 ">
           <div className="">
             <img
@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="border-t-2 ">
-        <p className="prod_1 mr-8 py-2 ml-2 lg:ml-16 !text-white ">
+        <p className="prod_1 mr-8 py-4 ml-2 lg:ml-16 xl:ml-24 !text-white ">
           Copyright 2024. All rights reserved
         </p>
       </div>

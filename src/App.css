@@ -67,6 +67,9 @@
   font-weight: 500;
   line-height: 150%; /* 24px */
 }
+.back {
+  background-image: url("../src/images/back.jpg");
+}
 .bed_text {
   /* text-shadow: white 2px 5px; */
   color: var(--font-color, #333);
@@ -93,5 +96,77 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+}
+.Asgad {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.price {
+  color: #9f9f9f;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.price1 {
+  color: #9f9f9f;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.showMore1 {
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+.showMore2 {
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.sku {
+  color: #9f9f9f;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sku1 {
+  color: #9f9f9f;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.descrip {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.descrip1 {
+  color: #9f9f9f;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.getin {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
   line-height: normal;
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Main_Bar = () => {
   return (
-    <div className="bg-[#ff0911] h-12 flex justify-center text-white">
+    <div className="bg-[#ff0911]  h-12 flex justify-center text-white">
       <span className="my-3">
         <b>Save 50%</b>
         <sup>

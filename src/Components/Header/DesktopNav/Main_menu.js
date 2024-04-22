@@ -96,7 +96,7 @@ const Main_menu = () => {
       </div>
       {looksDrpdown && (
         <div
-          className="  bg-[#f7f7f7] absolute left-0"
+          className="  bg-[#f7f7f7] absolute z-10  left-0"
           onMouseMove={handleMove}
           onMouseLeave={handleLeave}
         >
@@ -105,7 +105,7 @@ const Main_menu = () => {
       )}
       {brandsDrpdown && (
         <div
-          className="  bg-[#f7f7f7] absolute left-0"
+          className="  bg-[#f7f7f7] absolute z-10 left-0"
           onMouseMove={handleBrandMove}
           onMouseLeave={handleBrandLeave}
         >
