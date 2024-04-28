@@ -3,9 +3,9 @@ import React from "react";
 const Bottomlist = () => {
   return (
     <div>
-      <section className="pt-50">
+      <section className="">
         <div className="container mx-auto">
-          <h3 className="flex justify-center mt-10 lg:mt-28 xl:mt-2">
+          <h3 className="flex justify-center mt-0 md:mt-10 lg:mt-28 xl:mt-2">
             <hr className="w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />
             <span className="font-serif text-[20px] md:text-2xl font-semibold uppercase">
               Our Deals

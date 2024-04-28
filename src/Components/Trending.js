@@ -40,7 +40,7 @@ export default function LabTabs() {
           >
             <Tab
               label={
-                <span className="text-black capitalize font-serif text-xl flex justify-center hover:text-[#ff0911] hover:underline ">
+                <span className="text-black capitalize font-serif text-[16px] md:text-xl flex justify-center hover:text-[#ff0911] hover:underline ">
                   {" "}
                   Sandals
                 </span>
@@ -49,7 +49,7 @@ export default function LabTabs() {
             />
             <Tab
               label={
-                <span className="text-black capitalize font-serif text-xl flex justify-center hover:text-[#ff0911] hover:underline ">
+                <span className="text-black capitalize font-serif text-[16px] md:text-xl flex justify-center hover:text-[#ff0911] hover:underline ">
                   {" "}
                   Slippers
                 </span>
@@ -58,7 +58,7 @@ export default function LabTabs() {
             />
             <Tab
               label={
-                <span className="text-black capitalize font-serif text-xl flex justify-center hover:text-[#ff0911]  hover:underline ">
+                <span className="text-black capitalize font-serif text-[16px] md:text-xl flex justify-center hover:text-[#ff0911]  hover:underline ">
                   {" "}
                   Chappals
                 </span>
@@ -67,7 +67,7 @@ export default function LabTabs() {
             />
             <Tab
               label={
-                <span className="text-black capitalize font-serif text-xl flex justify-center hover:text-[#ff0911] hover:underline ">
+                <span className="text-black capitalize font-serif text-[16px] md:text-xl flex justify-center hover:text-[#ff0911] hover:underline ">
                   {" "}
                   Sandals
                 </span>
@@ -76,7 +76,7 @@ export default function LabTabs() {
             />
             <Tab
               label={
-                <span className="text-black capitalize font-serif text-xl flex justify-center hover:text-[#ff0911] hover:underline ">
+                <span className="text-black capitalize font-serif text-[16px] md:text-xl flex justify-center hover:text-[#ff0911] hover:underline ">
                   {" "}
                   Slippers
                 </span>
@@ -85,7 +85,7 @@ export default function LabTabs() {
             />
             <Tab
               label={
-                <span className="text-black capitalize font-serif text-xl flex justify-center hover:text-[#ff0911]  hover:underline ">
+                <span className="text-black capitalize font-serif text-[16px] md:text-xl flex justify-center hover:text-[#ff0911]  hover:underline ">
                   {" "}
                   Chappals
                 </span>
@@ -94,7 +94,7 @@ export default function LabTabs() {
             />
             <Tab
               label={
-                <span className="text-black capitalize font-serif text-xl flex justify-center hover:text-[#ff0911]  hover:underline ">
+                <span className="text-black capitalize font-serif text-[16px] md:text-xl flex justify-center hover:text-[#ff0911]  hover:underline ">
                   {" "}
                   Sandals
                 </span>
@@ -103,7 +103,7 @@ export default function LabTabs() {
             />
             <Tab
               label={
-                <span className="text-black capitalize font-serif text-xl flex justify-center hover:text-[#ff0911]  hover:underline ">
+                <span className="text-black capitalize font-serif text-[16px] md:text-xl flex justify-center hover:text-[#ff0911]  hover:underline ">
                   {" "}
                   Sandals
                 </span>

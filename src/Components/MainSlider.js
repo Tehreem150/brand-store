@@ -44,7 +44,7 @@ import React from "react";
 const MainSlider = () => {
   return (
     <section className="container justify-center mx-auto mt-12  md:mt-28">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto  lg:mx-16 xl:mx-32 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-0 md:mx-12  lg:mx-16 xl:mx-32 ">
         <div className="mt-3">
           <div
             className="deal wow fadeIn animated mb-4 bg-cover bg-center bg-no-repeat"
