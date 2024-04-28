@@ -20,7 +20,7 @@ export default function LabTabs() {
       <div className="flex justify-center mt-3 sm:mt-4 lg:mt-6">
         <Box
           sx={{
-            maxWidth: { xs: 320, sm: 640, lg: 1024, xl: 1280, xxl: 1536 },
+            maxWidth: { xs: 340, sm: 640, lg: 1024, xl: 1280, xxl: 1536 },
             bgcolor: "background.paper",
           }}
         >

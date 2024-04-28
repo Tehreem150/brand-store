@@ -77,7 +77,7 @@ const Main_nav = () => {
         <div
           onMouseMove={handleMove}
           onMouseLeave={handleLeave}
-          className="dropdowncontent  text-left text-normal font-serif  border-2 w-32 font-semibold  bg-white absolute right-64 top-28 z-10"
+          className="dropdowncontent  text-left text-normal font-serif  border-2 w-32 font-semibold  bg-white absolute right-56 xl:right-64 top-28 z-10"
         >
           <div className="flex flex-col">
             <a className="px-4 py-2 border-b-2 hover:bg-white hover:text-black">

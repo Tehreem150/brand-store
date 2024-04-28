@@ -1,16 +1,28 @@
 import React from "react";
+import { useState } from "react";
 import logo from "../../../images/logo.png";
-import compare from "../../../images/compare.png";
 import bag from "../../../images/bag.png";
 import worldwide from "../../../images/worldwide.png";
 const MainNav = () => {
+  const [languageDrpdown, setLanguageDropdown] = useState(false);
+  function handleMove() {
+    setLanguageDropdown(true);
+  }
+  function handleLeave() {
+    setLanguageDropdown(false);
+  }
   return (
     <div className="h-16">
       <div className="flex justify-between">
         <img src={logo} className="w-28 ml-4 my-2" alt="logo" />
         <div className="flex my-5 mr-3 space-x-1 sm:space-x-5">
           <a href="" className="hover:bg-gray-300 p-0.5">
-            <img src={worldwide} className="w-6 " />
+            <img
+              src={worldwide}
+              className="w-6 "
+              onMouseMove={handleMove}
+              onMouseOut={handleLeave}
+            />
           </a>
           {/* <a href="" className="hover:bg-gray-300 p-0.5">
             <img src={compare} className="w-7" />
@@ -53,6 +65,28 @@ const MainNav = () => {
           </a>
         </div>
       </div>
+      {languageDrpdown && (
+        <div
+          onMouseMove={handleMove}
+          onMouseLeave={handleLeave}
+          className="dropdowncontent  text-left text-normal font-serif  border-2 w-32 font-semibold  bg-white absolute right-10 sm:right-28 lg:right-12 top-28 z-10"
+        >
+          <div className="flex flex-col">
+            <a className="px-4 py-2 border-b-2 hover:bg-white hover:text-black">
+              English
+            </a>
+            <a className="px-4 py-2 border-b-2 hover:bg-white hover:text-black">
+              German
+            </a>
+            <a className="px-4 py-2 border-b-2 hover:bg-white hover:text-black">
+              Francias
+            </a>
+            <a className="px-4 py-2 border-b-2 hover:bg-white hover:text-black">
+              Italian
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

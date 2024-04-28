@@ -67,9 +67,17 @@ const Recommended = () => {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
         },
       },
       {
@@ -81,9 +89,9 @@ const Recommended = () => {
         },
       },
       {
-        breakpoint: 1010,
+        breakpoint: 900,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
         },
@@ -126,21 +134,21 @@ const Recommended = () => {
       <p className="block  !text-center text-black !text-[12px] sm:!text-[15px]  mt-2 mx-8 sm:mx-0">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
-      <div className=" transition ease-in-out delay-150  hover:-translate-y-3 hover:scale-116 duration-300 grid  grid-cols-1 gap-0 justify-center items-center  lg:gap-0 my-12 sm:my-20 lg:my-20 mx-8 sm:mx-32 xl:mx-28 ">
+      <div className=" transition ease-in-out delay-150  hover:-translate-y-3 hover:scale-116 duration-300 grid  grid-cols-1 gap-0 justify-center items-center  lg:gap-0 my-12 sm:my-20 lg:my-20 mx-24 sm:mx-32 xl:mx-28 ">
         <Slider {...settings}>
           <div className="   border-gray-900  p-2   ">
             <div className="bg-white dropdowncontent">
               <div className="flex justify-center items-center"></div>
               <div className="flex flex-col justify-center items-center mx-2 sm:mx-10">
                 <img src={banner2} alt="banner" className="mt-10" />
-                <p className=" text-2xl text-center my-2 font-semibold ">
+                <p className=" text-xl text-center my-2 font-semibold ">
                   CONFIDENTLY TRAVEL SOLO
                 </p>
-                <p className=" text-xl text-center my-2 font-light journey">
+                <p className=" text-[20px] text-center my-2 font-light journey">
                   Wondering where you should go on your next trip? Take this fun
                   &amp; free quiz to discover unique experiences
                 </p>
-                <button className="bg-[#ff0911] text-white text-xl w-40 p-2 mt-8 mb-16">
+                <button className="bg-[#ff0911] text-white text-[20px] w-40 p-2 mt-8 mb-16">
                   LEARN MORE
                 </button>
               </div>
@@ -151,14 +159,14 @@ const Recommended = () => {
               <div className="flex justify-center items-center"></div>
               <div className="flex flex-col justify-center items-center mx-2 sm:mx-10">
                 <img src={banner2} alt="banner" className="mt-10" />
-                <p className=" text-2xl text-center my-2 font-semibold ">
+                <p className=" text-xl text-center my-2 font-semibold ">
                   CONFIDENTLY TRAVEL SOLO
                 </p>
-                <p className=" text-xl text-center my-2 font-light journey">
+                <p className=" text-[20px] text-center my-2 font-light journey">
                   Wondering where you should go on your next trip? Take this fun
                   &amp; free quiz to discover unique experiences
                 </p>
-                <button className="bg-[#ff0911] text-white text-xl w-40 p-2 mt-8 mb-16">
+                <button className="bg-[#ff0911] text-white text-[20px] w-40 p-2 mt-8 mb-16">
                   LEARN MORE
                 </button>
               </div>
@@ -169,14 +177,14 @@ const Recommended = () => {
               <div className="flex justify-center items-center"></div>
               <div className="flex flex-col justify-center items-center mx-2 sm:mx-10">
                 <img src={banner2} alt="banner" className="mt-10" />
-                <p className=" text-2xl text-center my-2 font-semibold ">
+                <p className=" text-xl text-center my-2 font-semibold ">
                   CONFIDENTLY TRAVEL SOLO
                 </p>
-                <p className=" text-xl text-center my-2 font-light journey">
+                <p className=" text-[20px] text-center my-2 font-light journey">
                   Wondering where you should go on your next trip? Take this fun
                   &amp; free quiz to discover unique experiences
                 </p>
-                <button className="bg-[#ff0911] text-white text-xl w-40 p-2 mt-8 mb-16">
+                <button className="bg-[#ff0911] text-white text-[20px] w-40 p-2 mt-8 mb-16">
                   LEARN MORE
                 </button>
               </div>
@@ -187,14 +195,14 @@ const Recommended = () => {
               <div className="flex justify-center items-center"></div>
               <div className="flex flex-col justify-center items-center mx-2 sm:mx-10">
                 <img src={banner2} alt="banner" className="mt-10" />
-                <p className=" text-2xl text-center my-2 font-semibold ">
+                <p className=" text-xl text-center my-2 font-semibold ">
                   CONFIDENTLY TRAVEL SOLO
                 </p>
-                <p className=" text-xl text-center my-2 font-light journey">
+                <p className=" text-[20px] text-center my-2 font-light journey">
                   Wondering where you should go on your next trip? Take this fun
                   &amp; free quiz to discover unique experiences
                 </p>
-                <button className="bg-[#ff0911] text-white text-xl w-40 p-2 mt-8 mb-16">
+                <button className="bg-[#ff0911] text-white text-[20px] w-40 p-2 mt-8 mb-16">
                   LEARN MORE
                 </button>
               </div>
@@ -205,14 +213,14 @@ const Recommended = () => {
               <div className="flex justify-center items-center"></div>
               <div className="flex flex-col justify-center items-center mx-2 sm:mx-10">
                 <img src={banner2} alt="banner" className="mt-10" />
-                <p className=" text-2xl text-center my-2 font-semibold ">
+                <p className=" text-xl text-center my-2 font-semibold ">
                   CONFIDENTLY TRAVEL SOLO
                 </p>
-                <p className=" text-xl text-center my-2 font-light journey">
+                <p className=" text-[20px] text-center my-2 font-light journey">
                   Wondering where you should go on your next trip? Take this fun
                   &amp; free quiz to discover unique experiences
                 </p>
-                <button className="bg-[#ff0911] text-white text-xl w-40 p-2 mt-8 mb-16">
+                <button className="bg-[#ff0911] text-white text-[20px] w-40 p-2 mt-8 mb-16">
                   LEARN MORE
                 </button>
               </div>
@@ -223,14 +231,14 @@ const Recommended = () => {
               <div className="flex justify-center items-center"></div>
               <div className="flex flex-col justify-center items-center mx-2 sm:mx-10">
                 <img src={banner2} alt="banner" className="mt-10" />
-                <p className=" text-2xl text-center my-2 font-semibold ">
+                <p className=" text-xl text-center my-2 font-semibold ">
                   CONFIDENTLY TRAVEL SOLO
                 </p>
-                <p className=" text-xl text-center my-2 font-light journey">
+                <p className=" text-[20px] text-center my-2 font-light journey">
                   Wondering where you should go on your next trip? Take this fun
                   &amp; free quiz to discover unique experiences
                 </p>
-                <button className="bg-[#ff0911] text-white text-xl w-40 p-2 mt-8 mb-16">
+                <button className="bg-[#ff0911] text-white text-[20px] w-40 p-2 mt-8 mb-16">
                   LEARN MORE
                 </button>
               </div>
@@ -241,14 +249,14 @@ const Recommended = () => {
               <div className="flex justify-center items-center"></div>
               <div className="flex flex-col justify-center items-center mx-2 sm:mx-10">
                 <img src={banner2} alt="banner" className="mt-10" />
-                <p className=" text-2xl text-center my-2 font-semibold ">
+                <p className=" text-xl text-center my-2 font-semibold ">
                   CONFIDENTLY TRAVEL SOLO
                 </p>
-                <p className=" text-xl text-center my-2 font-light journey">
+                <p className=" text-[20px] text-center my-2 font-light journey">
                   Wondering where you should go on your next trip? Take this fun
-                  &amp; free quiz to discover unique experiences.
+                  &amp; free quiz to discover unique experiences
                 </p>
-                <button className="bg-[#ff0911] text-white text-xl w-40 p-2 mt-8 mb-16">
+                <button className="bg-[#ff0911] text-white text-[20px] w-40 p-2 mt-8 mb-16">
                   LEARN MORE
                 </button>
               </div>
