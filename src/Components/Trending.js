@@ -17,10 +17,10 @@ export default function LabTabs() {
 
   return (
     <TabContext value={value}>
-      <div className="flex justify-center mt-3 sm:mt-4">
+      <div className="flex justify-center mt-3 sm:mt-4 lg:mt-6">
         <Box
           sx={{
-            maxWidth: { xs: 320, sm: 480, lg: 1, xl: 1280, xxl: 1536 },
+            maxWidth: { xs: 320, sm: 640, lg: 1024, xl: 1280, xxl: 1536 },
             bgcolor: "background.paper",
           }}
         >
@@ -32,6 +32,7 @@ export default function LabTabs() {
                 padding: `0`,
               },
             }}
+            className="mx-12 md:mx-0"
             onChange={handleChange}
             aria-label="lab API tabs example"
             variant="scrollable"
@@ -39,7 +40,7 @@ export default function LabTabs() {
           >
             <Tab
               label={
-                <span className="text-[#ff0911] capitalize font-serif text-xl flex justify-center hover:text-[#ff0911] underline hover:underline ">
+                <span className="text-black capitalize font-serif text-xl flex justify-center hover:text-[#ff0911] hover:underline ">
                   {" "}
                   Sandals
                 </span>

@@ -2,7 +2,7 @@ import React from "react";
 import shoescheck from "../images/shoescheck.webp";
 const Product = () => {
   return (
-    <div className=" flex justify-center  relative   cursor-pointer">
+    <div className=" flex justify-center  relative   cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
       <div className="hover:product_hover">
         <div className=" justify-center">
           <img
@@ -13,7 +13,6 @@ const Product = () => {
           <div className="mb-10">
             <p className=" prod_1 text-center ">
               <b className="!text-black  text-xl">Salomon </b>XA PRO V8
-              WATERPROOF
             </p>
             <p className="text-black font-bold text-center ">89.90</p>
           </div>

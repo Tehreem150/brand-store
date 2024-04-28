@@ -82,20 +82,15 @@ const Shop = () => {
               </Box>
             </div>
             <TabPanel value="1">
-              {" "}
               <Description />
             </TabPanel>
             <TabPanel value="2">
               <Description />
             </TabPanel>
             <TabPanel value="3">
-              <Contact />{" "}
+              <Contact />
             </TabPanel>
           </TabContext>
-          {/* <p className="descrip">Description</p>
-            <p className="descrip1">Additional Information</p>
-            <p className="descrip1">Reviews [5]</p> */}
-
           <div className="footer">
             <h3 className="flex justify-center  mt-10 lg:mt-2">
               <hr className="w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />

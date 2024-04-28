@@ -39,7 +39,7 @@ const ProductDescription = ({ minValue = 0, maxValue = 100 }) => {
             </div>
           ))}
         </div>
-        <div className="w-2/3 relative md:w-3/4 lg:w-full rounded-lg  lg:ml-12 mt-4 sm:mt-16">
+        <div className="w-2/3 relative md:w-3/4 lg:w-full rounded-lg  lg:ml-12 mt-4 sm:mt-16 transition ease-in-out delay-150 hover:-translate-y-1 hover:-translate-x-1 hover:scale-110 duration-300">
           <TransformWrapper
             initialScale={1}
             initialPositionX={0}
@@ -48,7 +48,7 @@ const ProductDescription = ({ minValue = 0, maxValue = 100 }) => {
             {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
               <>
                 <TransformComponent>
-                  <img src={sampleArray[imgIndex]} alt="test" />
+                  <img src={sampleArray[imgIndex]} className="" alt="test" />
                 </TransformComponent>
                 <div className="absolute left-0 top-0">
                   <Controls />

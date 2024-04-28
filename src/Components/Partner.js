@@ -1,10 +1,9 @@
 import React from "react";
-import sale from "../images/sale.png";
+import Management from "./Management";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ShoeComponents from "./ShoeComponents";
-const Sale = () => {
+const Partner = () => {
   function SampleNextArrow(props) {
     const { className, onClick } = props;
     return (
@@ -53,13 +52,14 @@ const Sale = () => {
   }
   var settings = {
     dots: false,
-    infinite: false,
-    speed: 1000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 7,
+    slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     pauseOnHover: true,
+    cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     initialSlide: 0,
@@ -67,7 +67,7 @@ const Sale = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -79,16 +79,14 @@ const Sale = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
-          dots: false,
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          dots: false,
         },
       },
       {
@@ -102,43 +100,17 @@ const Sale = () => {
     ],
   };
   return (
-    <div>
-      <h3 className="flex justify-center mt-10 lg:mt-28">
-        <hr className="w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />
-        <span className="font-serif text-[20px] md:text-2xl font-semibold uppercase">
-          Sale
-        </span>
-        <hr className=" w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />
-      </h3>
-      <p className="block  !text-center text-black !text-[12px] sm:!text-[15px]  mt-2 mx-8 sm:mx-0">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-      <div className=" grid grid-cols-4   mx-4 md:mx-12 lg:mx-20 xl:mx-32 mt-8  sm:mt-10">
-        <div className="hidden lg:block">
-          <img src={sale} alt="sale" className="mt-2 h-[400px] 2xl:h-[480px]" />
-        </div>
-        <div className="col-span-4 lg:col-span-3 flex justify-center items-center">
-          <div className=" grid grid-cols-1 mx-12 items-center   ">
-            <Slider {...settings}>
-              <ShoeComponents />
-              <ShoeComponents />
-              <ShoeComponents />
-              <ShoeComponents />
-              <ShoeComponents />
-              <ShoeComponents />
-              {/* <Product />
-
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product /> */}
-            </Slider>
-          </div>
-        </div>
-      </div>
+    <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mx-28  lg:mx-40 ">
+      <Slider {...settings}>
+        <Management />
+        <Management />
+        <Management />
+        <Management />
+        <Management />
+        <Management />
+      </Slider>
     </div>
   );
 };
 
-export default Sale;
+export default Partner;

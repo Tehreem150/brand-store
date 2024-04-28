@@ -52,11 +52,15 @@ const TrendingTabs = () => {
     );
   }
   var settings = {
-    dots: true,
-    infinite: false,
+    dots: false,
+    infinite: true,
     speed: 2000,
     slidesToShow: 4,
     slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     initialSlide: 0,
@@ -67,7 +71,7 @@ const TrendingTabs = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -97,7 +101,7 @@ const TrendingTabs = () => {
     ],
   };
   return (
-    <div className="grid grid-cols-1 gap-10 mx-12 lg:mx-0  ">
+    <div className="grid grid-cols-1  mx-12 lg:mx-0  ">
       <Slider {...settings}>
         <ShoeComponents />
         <ShoeComponents />

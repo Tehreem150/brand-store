@@ -58,8 +58,10 @@ const Categorian = () => {
     dots: false,
     infinite: false,
     speed: 2000,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     initialSlide: 0,
@@ -106,26 +108,23 @@ const Categorian = () => {
   };
 
   return (
-    <div className="mx-auto mt-6 lg:mt-20 ">
-      <div className=" mt-6 xl:mt-10 ">
+    <div className="mx-auto mt-6 lg:mt-28 ">
+      <div className=" mt-8 xl:mt-10 ">
         <h3 className="flex justify-center">
           <hr className="w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />
-          <span className="font-serif text-[20px] md:text-2xl font-semibold uppercase">
+          <span className="font-serif text-[16px] md:text-2xl font-semibold uppercase">
             Browse The Range
           </span>
           <hr className=" w-8 sm:w-12 h-0.5 mt-4 bg-[#ff0911] mx-2 sm:mx-6" />
         </h3>
-        {/* <p className="browse_text !text-[20px] !md:text-2xl text-center">
-          Browse The Range
-        </p> */}
-        <p className="hidden sm:block  !text-center text-black !text-[15px]  mt-2">
+        <p className="block  !text-center text-black !text-[12px] sm:!text-[15px]  mt-2 mx-8 sm:mx-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
 
-      <div className=" grid grid-cols-1 gap-0 lg:gap-2 my-6 lg:my-20 mx-16 lg:mx-32  ">
+      <div className=" grid grid-cols-1 gap-0 lg:gap-8 my-6 lg:my-20 mx-16 xl:mx-32  ">
         <Slider {...settings}>
-          <div className="w-[324px]  border-gray-900  px-2 ">
+          <div className="w-[324px]  border-gray-900  px-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 ">
             <div className="flex justify-center items-center">
               <img src={dining} alt="Dining" />
             </div>
@@ -136,7 +135,7 @@ const Categorian = () => {
               </p>
             </div>
           </div>
-          <div className="w-[324px] border-gray-900  px-2 ">
+          <div className="w-[324px] border-gray-900  px-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 ">
             <div className="flex justify-center items-center">
               <img src={bedroom} alt="Bedroom" />
             </div>
@@ -147,7 +146,7 @@ const Categorian = () => {
               </p>
             </div>
           </div>
-          <div className="w-[324px] border-gray-900  px-2 ">
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300  px-2 ">
             <div className="flex justify-center items-center">
               <img src={living} alt="Living" />
             </div>
@@ -158,7 +157,7 @@ const Categorian = () => {
               </p>
             </div>
           </div>
-          <div className="w-[324px] border-gray-900  px-2 ">
+          <div className="w-[324px] border-gray-900  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 px-2 ">
             <div className="flex justify-center items-center">
               <img src={dining} alt="Dining" />
             </div>
@@ -170,7 +169,7 @@ const Categorian = () => {
               </p>
             </div>
           </div>
-          <div className="w-[324px] border-gray-900  px-2 ">
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 px-2 ">
             <div className="flex justify-center items-center">
               <img src={bedroom} alt="Bedroom" />
             </div>
@@ -182,7 +181,7 @@ const Categorian = () => {
               </p>
             </div>
           </div>
-          <div className="w-[324px] border-gray-900  px-2 ">
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300  px-2 ">
             <div className="flex justify-center items-center">
               <img src={living} alt="Living" />
             </div>
@@ -194,7 +193,7 @@ const Categorian = () => {
               </p>
             </div>
           </div>
-          <div className="w-[324px] border-gray-900  px-2 ">
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 px-2 ">
             <div className="flex justify-center items-center">
               <img src={dining} alt="Dining" />
             </div>
@@ -206,7 +205,7 @@ const Categorian = () => {
               </p>
             </div>
           </div>
-          <div className="w-[324px] border-gray-900  px-2 ">
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300  px-2 ">
             <div className="flex justify-center items-center">
               <img src={bedroom} alt="Bedroom" />
             </div>
@@ -218,7 +217,79 @@ const Categorian = () => {
               </p>
             </div>
           </div>
-          <div className="w-[324px] border-gray-900  px-2 ">
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={living} alt="Living" />
+            </div>
+            <div className="content"></div>
+            <div className="flex justify-center items-center">
+              <p className=" bed_text mt-[-50px] text-center absolute z-[999]">
+                {" "}
+                Living
+              </p>
+            </div>
+          </div>
+          <div className="w-[324px] border-gray-900  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={dining} alt="Dining" />
+            </div>
+            <div className="content"></div>
+            <div className="flex justify-center items-center">
+              <p className=" bed_text mt-[-50px] text-center absolute z-[999]">
+                {" "}
+                Dining
+              </p>
+            </div>
+          </div>
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={bedroom} alt="Bedroom" />
+            </div>
+            <div className="content"></div>
+            <div className="flex justify-center items-center">
+              <p className=" bed_text mt-[-50px] text-center absolute z-[999]">
+                {" "}
+                Bedroom
+              </p>
+            </div>
+          </div>
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={living} alt="Living" />
+            </div>
+            <div className="content"></div>
+            <div className="flex justify-center items-center">
+              <p className=" bed_text mt-[-50px] text-center absolute z-[999]">
+                {" "}
+                Living
+              </p>
+            </div>
+          </div>
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={dining} alt="Dining" />
+            </div>
+            <div className="content"></div>
+            <div className="flex justify-center items-center">
+              <p className=" bed_text mt-[-50px] text-center absolute z-[999]">
+                {" "}
+                Dining
+              </p>
+            </div>
+          </div>
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 px-2 ">
+            <div className="flex justify-center items-center">
+              <img src={bedroom} alt="Bedroom" />
+            </div>
+            <div className="content"></div>
+            <div className="flex justify-center items-center">
+              <p className=" bed_text mt-[-50px] text-center absolute z-[999]">
+                {" "}
+                Bedroom
+              </p>
+            </div>
+          </div>
+          <div className="w-[324px] border-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300  px-2 ">
             <div className="flex justify-center items-center">
               <img src={living} alt="Living" />
             </div>

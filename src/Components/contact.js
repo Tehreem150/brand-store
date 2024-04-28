@@ -2,7 +2,9 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="container float mx-auto justify-center">
-      <p className="getin !text-2xl text-center mt-4">Get In Touch With Us</p>
+      <p className="getin !text-2xl lg:!text-4xl text-center mt-4">
+        Get In Touch With Us
+      </p>
       <p className="text-center prod_1 mt-1 mx-8 lg:mx-48 xl:mx-96">
         For More Information About Our Product & Services. Please Feel Free To
         Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not

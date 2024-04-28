@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Skincare from "./Skincare";
-import Brands from "../../Brands";
+import Brands from "./Brands";
 const Main_menu = () => {
   const [looksDrpdown, setLooksDropdown] = useState(false);
   const [brandsDrpdown, setBrandsDropdown] = useState(false);
@@ -19,8 +19,8 @@ const Main_menu = () => {
   }
   return (
     <div>
-      <div className=" bg-white border-y-[1px]">
-        <div className="hidden relative md:flex  font-semibold   uppercase  justify-center text-[13px]   text-black space-x-4 xl:space-x-7 2xl:space-x-11  mx-auto h-12">
+      <div className="container mx-auto bg-white border-y-[1px]">
+        <div className="hidden relative md:flex  font-semibold   uppercase  justify-center text-[13px]   text-black space-x-6 xl:space-x-7 2xl:space-x-11  mx-auto h-12">
           <Link
             to="/"
             className="hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911]  flex items-center "
@@ -28,7 +28,6 @@ const Main_menu = () => {
             New
           </Link>
           <Link
-            to="/shop"
             onMouseMove={handleBrandMove}
             onMouseOut={handleBrandLeave}
             className=" flex items-center hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911]   px-2"
@@ -48,7 +47,6 @@ const Main_menu = () => {
             Skincare
           </Link>
           <Link
-            to="/contact"
             onMouseMove={handleMove}
             onMouseOut={handleLeave}
             className="hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911] flex items-center px-2"
@@ -64,7 +62,7 @@ const Main_menu = () => {
 
           <Link
             to="/contact"
-            className="hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911] flex items-center px-2"
+            className="lg:hidden xl:flex hover:text-[#ff0911] hover:border-b-2 hover:border-[#ff0911] flex items-center px-2"
           >
             Bath & Body
           </Link>
